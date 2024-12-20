@@ -1,0 +1,58 @@
+@MexicanoBackend_HostAddress = http://localhost:5264
+
+GET {{MexicanoBackend_HostAddress}}/api/Tournaments/
+Accept: application/json
+
+###
+
+GET {{MexicanoBackend_HostAddress}}/api/Tournaments/2
+Accept: application/json
+
+###
+
+PUT {{MexicanoBackend_HostAddress}}/api/Tournaments/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "string",
+  "numberOfPlayers": 4,
+  "currentRound": 0,
+  "players": [
+    {
+      "name": "hello",
+      "score": 0
+    },
+        {
+      "name": "hello",
+      "score": 0
+    },
+        {
+      "name": "hello",
+      "score": 0
+    },
+        {
+      "name": "hello",
+      "score": 0
+    }
+  ],
+  "matches": [
+    {
+      "id": 0,
+      "team1": [
+        0
+      ],
+      "team2": [
+        0
+      ],
+      "team1Score": 0,
+      "team2Score": 0,
+      "isScoreSubmitted": true
+    }
+  ]
+}
+
+
+###
+
+DELETE {{MexicanoBackend_HostAddress}}/api/tournaments/
